@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 export default function Navbar(props) {
+  console.log(props);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
