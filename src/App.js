@@ -1,15 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
+//import TextForm from "./components/TextForm";
+import About from "./components/About";
 import TextForm from "./components/TextForm";
+import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar title="TextUtils" abouttext="About" contacttext="Contact" />
-
-      <div className="container my-3">
-        <TextForm heading="Enter text " />
-      </div>
+      <Switch>
+        <Route path={"/"} exact>
+        <Navbar title="TextUtils" abouttext="About" contacttext="Contact" />
+        </Route>
+        <Route path={"/about"}>
+        <Navbar title="TextUtils" abouttext="About" contacttext="Contact" />
+          <About />
+        </Route>
+        <Route path={"/TextUtils"}>
+        <Navbar title="TextUtils" abouttext="About" contacttext="Contact" />
+          <TextForm />
+        </Route>
+      </Switch>
     </>
   );
 }
