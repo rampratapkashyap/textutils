@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 const About = () => {
-
- const [myStyle, setMyStyle] = useState({
+  const [myStyle, setMyStyle] = useState({
     color: "white",
     backgroundcolor: "black",
   });

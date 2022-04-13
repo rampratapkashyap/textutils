@@ -53,7 +53,6 @@ export default function TextForm(props) {
 
         <button class="btn btn-warning" onClick={handleClearClick}>
           Cleartext
-          {/* <img src="favicon-16x16.png"></img> */}
         </button>
         <button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>
           UPPER CASE
